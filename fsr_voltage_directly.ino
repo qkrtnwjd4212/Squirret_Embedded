@@ -4,15 +4,14 @@
 #include <ArduinoJson.h>
 
 // ------------------- 사용자 설정 -------------------
-const char* ssid = "*";       // 와이파이 이름
-const char* password = "*";               // 와이파이 비밀번호
+const char* ssid = "";       // 와이파이 이름
+const char* password = "";               // 와이파이 비밀번호
 
 // 원격 서버 주소 (AWS EC2)
-const char* serverUrl = "http://*:8080/api/fsr_data";
+const char* serverUrl = "http://54.86.161.187:8080/api/fsr_data";
 
 // 깔창 구분 ("left" 또는 "right")
-const char* insoleSide = "right";  // 왼쪽 깔창이면 "left", 오른쪽이면 "right"
-
+const char* insoleSide = "right";
 // ----------------------------------------------------
 // GPIO 핀 매핑
 #define FSR1_PIN 36  // ADC1_0
@@ -77,6 +76,13 @@ void loop() {
   // JSON 데이터 생성
   JsonDocument doc;
   doc["side"] = insoleSide;
+  doc["voltage1"] = voltage1;
+  doc["voltage2"] = voltage2;
+  doc["voltage3"] = voltage3;
+  doc["voltage4"] = voltage4;
+  doc["voltage5"] = voltage5;
+  doc["voltage6"] = voltage6;
+
   doc["ratio1"] = ratio1;
   doc["ratio2"] = ratio2;
   doc["ratio3"] = ratio3;
