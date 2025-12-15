@@ -1,2 +1,129 @@
-# Squirret_Embedded
-2025 Capstone Design - Squirret Embedded Repository
+# 🐿️ SquirFit - 스마트인솔과 Mediapipe를 활용한 실시간 자세 분석 서비스 🏃‍♂️‍➡️
+
+영상 분석과 족저압 분석을 통합하여 실시간 자세 분석 피드백을 제공하는 피트니스 앱
+
+[![App Store](https://img.shields.io/badge/App_Store-0D96F6?style=for-the-badge&logo=app-store&logoColor=white)](https://apps.apple.com/kr/app/squirfit-%EB%8B%A4%EB%9E%8C%EC%9D%B4%EC%99%80-%ED%95%A8%EA%BB%98-%EC%9A%B4%EB%8F%99%EC%9D%84/id6746436823)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/GBPyvMfTekw?si=384V0t_OB3BXtuuV)
+<br/><br/>
+
+<!-- 공통 컨테이너 -->
+<div style="max-width: 1200px; margin: 0 auto;">
+  <div style="display: flex; justify-content: space-between;">
+    <img src="https://github.com/user-attachments/assets/4bda310b-9042-45f3-b81f-2842bbe40173" width="24%" />
+    <img src="https://github.com/user-attachments/assets/0eb135f4-a898-41a2-848a-0d8c9fb36c33" width="24%" />
+    <img src="https://github.com/user-attachments/assets/4e27fc03-e5b9-4f1b-806f-ffcd5bfa5cc3" width="24%" />
+    <img src="https://github.com/user-attachments/assets/8b287bb0-5fd0-44d5-902e-958ccc32af70" width="24%" />
+  </div>
+  <br/>
+  <img 
+    src="https://github.com/user-attachments/assets/c27b2927-1b98-4e5c-95e8-6ae576fb9be6"
+    style="width: 100%;"
+  />
+</div>
+
+<br/>
+
+## 👟 서비스 개요
+
+- 최근 개인 건강 관리에 대한 관심이 빠르게 증가하고 있고, 홈 트레이닝의 대중화로 디지털 피트니스 시장 역시 지속적인 성장을 보이고 있음
+- 그러나 기존 피트니스 앱들은 순간적인 자세 분석 정보만 제공하거나, 운동 자세에 대한 텍스트/영상 설명만 제공하고 있어 실시간으로 사용자가 동작을 교정하며 운동할 수 있는 기능은 부족함
+- 이러한 문제를 해결하기 위해, Mediapipe를 사용한 비전 AI로 전신 관절 분석과 스마트 인솔을 통한 족저압 분석을 통합하여, 기존보다 정확하고 개인화된 실시간 자세 피드백을 제공하는 서비스를 개발함
+<br/>
+
+## ✨ 주요 기능 설명
+
+- 📷 카메라 기반 실시간 자세 분석 및 스켈레톤 출력
+- 🦶 스마트 인솔을 활용한 부위별 압력 분포 출력
+- 💬 10초마다 자세에 대한 음성 및 시각적 피드백 제공
+- 🔢 운동 시 자동 횟수/세트 카운팅
+- 📝 운동 완료 후 결과 데이터 확인
+<br/>
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/0c0c9c34-fe40-46d3-9f60-8c980f314c8d" width="100%" />
+      <br/>
+      <strong>앱 시작화면</strong>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/93644feb-36ab-4fba-a69a-d1e7a7c20cb9" width="100%" />
+      <br/>
+      <strong>운동 진입 화면</strong>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/3194879b-88d2-4d4e-acc0-dca8f8b4c25f" width="100%" />
+      <br/>
+      <strong>운동 중 화면</strong>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/1efb49d7-50cd-41e9-8109-2e52f650165e" width="100%" />
+      <br/>
+      <strong>운동 완료 화면</strong>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/1e637549-9b0e-400b-bb31-ace22ea19f7e" width="100%" />
+      <br/>
+      <strong>운동 시작 화면</strong>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/477963b0-64c8-48ab-a202-69ba0d6a767f" width="100%" />
+      <br/>
+      <strong>설정 화면</strong>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+## 🛠️ 기술 스택
+
+- iOS: Swift, SwiftUI, AVFoundation, Combine, Websocket
+- Server: SpringBoot, Java17, MySQL 8.0, Spring Data JPA, Websocket, Docker, Docker Compose
+- AI: Google Mediapipe, FastAPI, Websocket, Azure App Service, Github Actions
+- Embedded: ESP32 DevKit WROOM-32U * 2, FSR400 * 6, Arduino
+<br/>
+
+<img width="2048" height="1147" alt="image" src="https://github.com/user-attachments/assets/facb6e04-66bb-4220-97af-741efa9454e6" />
+
+<br/>
+
+## 👟 스마트 인솔 구현 
+
+<div style="max-width: 1200px; margin: 0 auto;">
+  <div style="display: flex; gap: 16px; flex-wrap: nowrap;">
+    <img
+      src="https://github.com/user-attachments/assets/434e2b16-805a-492e-97c3-6cab835667a9"
+      style="width: calc(50% - 8px); height: 360px; object-fit: cover;"
+    />
+    <img
+      src="https://github.com/user-attachments/assets/2cbdbac7-fea6-4f28-8688-632325d78fbd"
+      style="width: calc(50% - 8px); height: 360px; object-fit: cover;"
+    />
+  </div>
+</div>
+
+
+- Wifi 센서가 내장된 ESP32 보드를 사용하여 서버와 통신
+- 만능기판에 모든 부품들을 직접 납땜하여 회로를 제작함으로써, 브레드보드 기반의 회로보다 연결불량이 발생할 확률이 낮고 내구성과 안정성이 높음
+<br/><br/>
+
+<div style="max-width: 1200px; margin: 0 auto;">
+  <div style="display: flex; gap: 16px; flex-wrap: nowrap;">
+    <img
+      src="https://github.com/user-attachments/assets/cc1b8fad-ae47-4958-bd1f-7c6f282d04f3"
+      style="width: calc(50% - 8px); height: 360px; object-fit: cover;"
+    />
+    <img
+      src="https://github.com/user-attachments/assets/076de1e6-dc8d-4775-846d-8eb03e23b850"
+      style="width: calc(50% - 8px); height: 360px; object-fit: cover;"
+    />
+  </div>
+</div>
+
+- 인솔 한 짝 당 FSR 센서 6개를 사용하였고, 운동 시 압력이 주로 집중되는 전족부, 중족부, 후족부에 각 2개씩 센서를 배치함
+- 인솔에서 측정되는 압력 데이터는 매초 Spring 서버로 전송되고, 서버에서 웹소켓 통신으로 iOS 앱에 실시간으로 전송함
+- 앱에서는 센서 부위별 압력 데이터를 부족/적정/과다/매우 과다 네 단계로 나누어, 실시간 족저압 분포에 대한 시각적 정보를 제공함
