@@ -98,11 +98,11 @@
   <div style="display: flex; gap: 16px; flex-wrap: nowrap;">
     <img
       src="https://github.com/user-attachments/assets/434e2b16-805a-492e-97c3-6cab835667a9"
-      style="width: calc(50% - 8px); height: 360px; object-fit: cover;"
+      style="width: 48%; height: 360px; object-fit: cover;"
     />
     <img
       src="https://github.com/user-attachments/assets/2cbdbac7-fea6-4f28-8688-632325d78fbd"
-      style="width: calc(50% - 8px); height: 360px; object-fit: cover;"
+      style="width: 48%; height: 360px; object-fit: cover;"
     />
   </div>
 </div>
@@ -116,11 +116,11 @@
   <div style="display: flex; gap: 16px; flex-wrap: nowrap;">
     <img
       src="https://github.com/user-attachments/assets/cc1b8fad-ae47-4958-bd1f-7c6f282d04f3"
-      style="width: calc(50% - 8px); height: 360px; object-fit: cover;"
+      style="width: 48%; height: 360px; object-fit: cover;"
     />
     <img
       src="https://github.com/user-attachments/assets/076de1e6-dc8d-4775-846d-8eb03e23b850"
-      style="width: calc(50% - 8px); height: 360px; object-fit: cover;"
+      style="width: 48%; height: 360px; object-fit: cover;"
     />
   </div>
 </div>
