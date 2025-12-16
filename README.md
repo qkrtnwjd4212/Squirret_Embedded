@@ -135,3 +135,44 @@
 - 인솔 한 짝 당 FSR 센서 6개를 사용하였고, 운동 시 압력이 주로 집중되는 전족부, 중족부, 후족부에 각 2개씩 센서를 배치함
 - 인솔에서 측정되는 압력 데이터는 매초 Spring 서버로 전송되고, 서버에서 웹소켓 통신으로 iOS 앱에 실시간으로 전송함
 - 앱에서는 센서 부위별 압력 데이터를 부족/적정/과다/매우 과다 네 단계로 나누어, 실시간 족저압 분포에 대한 시각적 정보를 제공함
+
+<br/>
+
+## 👩‍💻 팀원 구성
+
+<table>
+  <tr align="center">
+        <td><strong>임베디드</strong></td>
+        <td><strong>백엔드</strong></td>
+        <td><strong>iOS</strong></td>
+        <td><strong>AI</strong></td>
+    </tr>
+    <tr align="center">
+        <td><B>박수정</B></td>
+        <td><B>전주은</B></td>
+        <td><B>이가은</B></td>
+        <td><B>곽윤지</B></td>
+    </tr>
+    <tr align="center">
+        <td>
+            <img src="https://avatars.githubusercontent.com/u/80205505?v=4?size=100" width="100">
+            <br>
+            <a href="https://github.com/qkrtnwjd4212/Squirret_Embedded">qkrtnwjd4212</a>
+        </td>
+        <td>
+            <img src="https://avatars.githubusercontent.com/u/150149986?v=4?size=100" width="100">
+            <br>
+            <a href="https://github.com/qkrtnwjd4212/Squirret_Backend">jeon-jueun</a>
+        </td>
+        <td>
+            <img src="https://avatars.githubusercontent.com/u/82457928?v=4?size=100" width="100">
+            <br>
+            <a href="https://github.com/rriver2/SquirFit">rriver2</a>
+        </td>
+        <td>
+            <img src="https://avatars.githubusercontent.com/u/83887485?v=4?size=100" width="100">
+            <br>
+            <a href="https://github.com/yunjikwak/capston-design-mpp">yunjikwak</a>
+        </td>
+    </tr>
+</table>
